@@ -1,0 +1,31 @@
+
+validPermissions = [
+    "cando1",
+    "cando2",
+    "cando3",
+    "cando4",
+    "cando5",
+    "cando6",
+    "cando7",
+    "cando8",
+]
+let roles = [
+    {
+        name: "Test1",
+        permissions: ["cando1", "cando3", "cando5"]
+    },
+    {
+        name:"Test2",
+        permissions:["cando1","cando3","cando5"]
+    }
+]
+
+let roleArray = [];
+function addRole(role, values) {
+    const dynamicVariableName = `valid_${role}`;
+    roleArray[dynamicVariableName] = values;
+  }
+for(let i = 0; i < roles.length; i++){
+    addRole(roles[i].name,roles[i].permissions);
+ 
+}

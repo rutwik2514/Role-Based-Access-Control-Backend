@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "permissions.js",
+    "preet.js"
+  ]
+}
